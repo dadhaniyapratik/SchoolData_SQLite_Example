@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_student_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.pratik.schooldata.AddStudentDetails">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="43dp"
+        android:layout_marginEnd="43dp"
+        android:id="@+id/edt_fname"
+        android:hint="Fname" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/edt_fname"
+        android:layout_alignRight="@+id/edt_fname"
+        android:layout_alignEnd="@+id/edt_fname"
+        android:id="@+id/edt_lname"
+        android:hint="Lname" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/edt_std"
+        android:layout_below="@+id/edt_lname"
+        android:layout_alignLeft="@+id/edt_lname"
+        android:layout_alignStart="@+id/edt_lname"
+        android:hint="Std" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/edt_std"
+        android:layout_alignRight="@+id/edt_std"
+        android:layout_alignEnd="@+id/edt_std"
+        android:id="@+id/edt_div"
+        android:hint="Div" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/edt_div"
+        android:layout_alignLeft="@+id/edt_div"
+        android:layout_alignStart="@+id/edt_div"
+        android:id="@+id/edt_result"
+        android:hint="Result" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/edt_percent"
+        android:layout_below="@+id/edt_result"
+        android:layout_alignLeft="@+id/edt_result"
+        android:layout_alignStart="@+id/edt_result"
+        android:hint="Percent" />
+
+    <Button
+        android:text="save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="78dp"
+        android:id="@+id/btn_save"
+        android:layout_below="@+id/edt_percent"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
